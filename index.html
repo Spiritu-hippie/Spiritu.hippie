@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritu Hippie | Maia</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(
+        180deg,
+        #f8dff0,
+        #e6ddf7,
+        #dff1f0,
+        #eaf6df,
+        #fff5d9
+      );
+      color: #5a5a5a;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.98);
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8e7cc3;
+      font-weight: bold;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+    }
+
+    .presentacion {
+      padding: 110px 20px 40px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .foto-perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      object-fit: cover;
+      margin-bottom: 15px;
+      background: #fff;
+    }
+
+    .bio-box {
+      background: rgba(255,255,255,0.4);
+      padding: 25px;
+      border-radius: 30px;
+      backdrop-filter: blur(5px);
+    }
+
+    .bio-box h1 {
+      color: #8e7cc3;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    section {
+      padding: 40px 10px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #8e7cc3;
+      border-bottom: 2px solid #b6d7a8;
+      padding-bottom: 8px;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+      border: 1px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .foto-prod {
+      width: 100%;
+      height: 130px;
+      background: #fdf2f2;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    .precio {
+      color: #b6d7a8;
+      font-weight: bold;
+      display: block;
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    .btn-comprar {
+      background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .btn-ig-main {
+      background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#inicio">Maia</a>
+    <a href="#simples">Simples</a>
+    <a href="#simples-planas">Planas</a>
+    <a href="#dije">Dije</a>
+    <a href="#mostacillas">Mostacillas</a>
+  </nav>
+
+  <header class="presentacion" id="inicio">
+    <img src="URL_TU_FOTO" alt="Maia" class="foto-perfil">
+    <div class="bio-box">
+      <h1>Soy Maia</h1>
+      <p>
+        Todo comenzó con un <strong>regalo de Navidad</strong> de mis papás.
+        Hoy, <strong>@spiritu.hippie</strong> es mi sueño realidad.
+      </p>
+      <a href="https://www.instagram.com/spiritu.hippie" target="_blank" class="btn-ig-main">
+        Instagram
+      </a>
+    </div>
+  </header>
+
+  <!-- PULSERAS SIMPLES -->
+  <section id="simples">
+    <h2>Pulseras Simples</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="FOTO_URL" alt="Pulsera blanca" class="foto-prod">
+        <h3>Blanca</h3>
+        <span class="precio">$2000</span>
+        <a href="#" class="btn-comprar">Comprar</a>
+      </div>
+      <!-- Repetí el resto de cards -->
+    </div>
+  </section>
+
+  <!-- PULSERAS SIMPLES PLANAS -->
+  <section id="simples-planas">
+    <h2>Pulseras Simples Planas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="FOTO_URL" alt="Pulsera plana blanca" class="foto-prod">
+        <h3>Blanca</h3>
+        <span class="precio">$2000</span>
+        <a href="#" class="btn-comprar">Comprar</a>
+      </div>
+      <!-- Repetí el resto -->
+    </div>
+  </section>
+
+  <!-- CON DIJE -->
+  <section id="dije">
+    <h2>Con Dije</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="FOTO_URL" alt="Pulsera con dije paloma" class="foto-prod">
+        <h3>Paloma</h3>
+        <span class="precio">$2000</span>
+        <a href="#" class="btn-comprar">Comprar</a>
+      </div>
+      <!-- Más dijes -->
+    </div>
+  </section>
+
+  <!-- CON MOSTACILLAS -->
+  <section id="mostacillas">
+    <h2>Con Mostacillas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="FOTO_URL" alt="Ojo turco azul" class="foto-prod">
+        <h3>Ojo Turco Azul</h3>
+        <span class="precio">$2000</span>
+        <a href="#" class="btn-comprar">Comprar</a>
+      </div>
+      <!-- Más mostacillas -->
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding:40px; font-size:0.8rem; color:#8e7cc3;">
+    © Spiritu Hippie por Maia
+  </footer>
+
+</body>
+</html>
